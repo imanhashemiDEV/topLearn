@@ -1,0 +1,483 @@
+/*
+1.  Reset CSS
+2.  Global CSS
+3.  Header CSS
+4.  Navigation CSS
+5.  Services
+6.  About CSS
+7.  Vision CSS
+8.  FastFood CSS
+9.  Latestnews CSS
+10. Customer CSS
+11. Contact CSS
+12. Footer CSS
+13. Tooltip CSS
+*/
+/*----------------------------1. Reset----------------------------*/
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+body {
+    line-height:1
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block
+}
+
+nav ul {
+    list-style:none
+}
+
+blockquote,q {
+    quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content:'';
+    content:none
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:700
+}
+
+del{
+    text-decoration:line-through
+}
+
+abbr[title],dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0
+}
+
+input,select {
+    vertical-align:middle
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box
+}
+
+img {
+  max-width: 100%
+}
+
+li {
+  list-style: none
+}
+
+:focus {
+  outline: 0
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none
+}
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:300, 500, 700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/eot/Vazir-Black-FD.eot');
+  src: url('../fonts/eot/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Black-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Black-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Black-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/Vazir-Bold-FD.eot');
+  src: url('../fonts/eot/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Bold-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Bold-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eot/Vazir-Medium-FD.eot');
+  src: url('../fonts/eot/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Medium-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Medium-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Medium-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/eot/Vazir-Light-FD.eot');
+  src: url('../fonts/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/eot/Vazir-Light-FD.eot');
+  src: url('../fonts/eot/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/eot/Vazir-FD.eot');
+  src: url('../fonts/eot/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/woff2/Vazir-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/woff/Vazir-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/ttf/Vazir-FD.ttf') format('truetype');
+}
+
+
+body{
+  font-family: vazir !important;
+}
+
+
+/*      Start My Style     */
+
+
+.top-header{
+  width: 100%;
+  height: 100vh;
+  background: url('../images/landing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar .navbar-brand{
+  height: 70px;
+  width: 70px;
+}
+
+.navbar-nav{
+  position: relative;
+}
+
+.navbar-nav .nav-link{
+  padding: 10px;
+}
+
+.top-header .navbar-nav .nav-link::before{
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 1s ease;
+}
+
+.navbar-nav .nav-link:hover::before{
+  width: 100%;
+}
+
+
+/* header info */
+
+.header-info{
+width: 50%;
+height: 400px;
+margin: 20px auto 0;
+}
+
+.header-text{
+  text-align: center;
+  margin-bottom: 35px;
+ 
+}
+
+.header-text h3{
+  font-size: 26px;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.header-search{
+  width: 100%;
+}
+
+.header-search form{
+  width: 100%;
+  background-color:rgb(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+
+.header-search form input{
+  width: 100%;
+}
+
+.fa-search-div{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.header-search form .fa-search{
+  color: red;
+}
+
+.header-statistic img {
+height: 150px;
+width: 150px;
+
+}
+
+.header-statistic span {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.header-statistic h3{
+  color: white;
+
+}
+
+/* second-menu */
+
+.vip-part img{
+  height: 50px;
+  width: 50px;
+}
+
+.second-nav .navbar-nav .nav-item .nav-link{
+  color: black;
+}
+
+.second-nav .navbar-nav .nav-item .nav-link:hover{
+  color: lightskyblue;
+  
+}
+
+.second-nav .navbar-nav .nav-item:hover > ul {
+
+  display: block !important;
+  
+}
+
+.second-nav .navbar-nav .nav-item > ul > li > ul {
+
+  top: 0;
+  right: 145px;
+
+  
+}
+
+/* .second-nav .navbar-nav .nav-item > ul > li > ul li {
+
+ width: 150px;
+ margin: 10px;
+ padding: 5px;
+
+  
+} */
+
+.second-nav .navbar-nav .nav-item > ul > li:hover > ul {
+
+  display: block !important;
+ }
+
+ /* .second-nav .navbar-nav .nav-item > ul > li > ul li:hover{
+  
+  background-color: lightgrey;
+  
+
+ } */
+
+
+ /* Services */
+
+ .service img{
+   height: 100px;
+   width: 100px;
+ }
+ 
+
+ /* last course */
+
+ .transform-card{
+   transition: all 1s ease;
+ }
+
+ .transform-card:hover{
+   transform: scale(1.2,1.2);
+ }
+
+
+ /*   last Article  */
+
+ .last-article{
+  width: 100%;
+  background-image: url(../images/article-pattern.png);
+  background-color: #f6f9fa;
+  position: relative;
+ }
+
+ .article-cover{
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   background-color: rgba(0,0,0,0.6);
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.5s ease-in-out;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .article-cover-body:hover .article-cover{
+  visibility: visible;
+  opacity: 1;
+ }
+
+ .article-cover h1{
+   color: white;
+   vertical-align: middle;
+ }
+
+ .left-animate{
+   height: 500px;
+   width: 300px;
+   background-image: url('../images/left-parallax.svg');
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 20px;
+   left: 0;
+ }
+
+ .foo{
+   z-index: 100;
+ }
+
+ /* footer */
+
+ .main-footer{
+   width: 100%;
+   background-color:#153248;
+   background-image: url(../images/article-pattern.png);
+ }
+
+ .news-part{
+   border: 1px dashed rgba(255,255,255,0.4);
+ }
+
+
+ .float-navigation{
+   visibility: hidden;
+   opacity: 0;
+   position: fixed;
+   top: 0;
+   background-color: #ccc;
+   z-index: 100;
+   transition:all 0.4s ease-in ;
+   height: 0;
+ }

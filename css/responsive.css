@@ -1,0 +1,11 @@
+
+
+@media   screen and (max-width:768px)  {
+   
+    .header-text h3{
+        font-size: 18px !important;
+        line-height: 40px !important;
+      }
+
+
+}
